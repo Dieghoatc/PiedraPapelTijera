@@ -5,14 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piedra Papel o Tijera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
+        <nav>
+            <span>Dieghoatc.com</span>
+        </nav>
         <div class="header">
-            <h2>Piedra Papel o Tijera</h2>
+            <h1>¡Piedra Papel o Tijera!</h1>
         </div>
-
+        <section>
+            <div class="content-container">
+                <div><h2>Player 1: </h2></div>
+                <div><h2>Player 2: </h2></div>
+            </div>
+        </section>
+        <section class="gameBoard">
+            <div class="move">
+                <div class="stone" onclick="stoneSelected()">
+                    <img src="./assets/images/stone.png" alt="mano piedra">
+                </div>
+                <div class="paper" onclick="paperSelected()">
+                    <img src="./assets/images/paper.png" alt="mano papel">
+                </div>
+                <div class="scissor" onclick="scissorSelected()" >
+                    <img src="./assets/images/scissor.png" alt="mano tijera">
+                </div>
+            </div>
+            <div class="versus">
+                <div>
+                    <img src="./assets/images/vs.png" alt="texto de vesus">
+                </div>
+            </div>
+            <div class="moveIA">
+                <div class="rick">
+                    <img src="./assets/images/rick.png" alt="rick">
+                </div>
+            </div>
+        </section>
     </div>
     <script src="./index.js"></script>
 </body>
